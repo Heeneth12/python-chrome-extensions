@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Python Compiler</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+  <style>
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
+  
+    .logo {
+      max-width: 25px; /* Adjust the image width as needed */
+      margin-right: 10px; /* Space between image and text */
+    }
+  
+    .heading {
+      color: rgb(3, 3, 3);
+      text-align: center;
+    }
+  </style>
+</head>
+<body style="background-color: #dde6ed;">
+    <div class="container">
+        <img src="sai.png" alt="Logo" class="logo">
+        <h2 class="heading">Code_me</h2>
+      </div>
+
+  <textarea style="background-color: #9db2bf " id="pythonCode" placeholder="code me..!"></textarea>
+  <button id="compileButton">Compile</button>
+  <select id="language">
+    <option value="python3">Python 3</option>
+    <option value="java">Java</option>
+    <option value="c">c</option>
+    <option value="cpp">cpp</option>
+    <!-- Add more language options as needed -->
+  </select>
+  <div id="output"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
